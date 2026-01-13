@@ -1,0 +1,46 @@
+package com.boot.dto;
+
+import java.time.LocalDate;
+import java.util.List;
+
+import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.Data;
+
+@Data
+public class MovieSearchRequest {
+	  @Schema(description = "검색어(키워드)", example = "AI 병기")
+	    private String keyword;
+
+	    @Schema(description = "현재 상영작 필터", example = "true")
+	    private Boolean nowPlaying;
+
+	    @Schema(description = "장르 필터", example = "[\"28\", \"878\"]") // 장르 ID로 변경
+	    private List<Integer> genres;
+
+	    @Schema(description = "최소 평점", example = "7.5")
+	    private Float minRating;
+
+	    @Schema(description = "개봉일 시작", example = "2020-01-01")
+	    private LocalDate releaseDateFrom;
+
+	    @Schema(description = "개봉일 종료", example = "2023-12-31")
+	    private LocalDate releaseDateTo;
+
+	    @Schema(description = "페이지 번호 (0부터 시작)", example = "0")
+	    private Integer page = 0;
+
+	    @Schema(description = "페이지 크기", example = "20")
+	    private Integer size = 20;
+
+		@Schema(description = "성인여부", example ="false")
+		private boolean isAdult;
+
+		@Schema(description = "정렬 기준 필드", example = "vote_average")
+		private String sortBy;
+
+		@Schema(description = "정렬 순서 (asc 또는 desc)", example = "desc")
+		private String sortOrder;
+
+		@Schema(description = "투표 수" ,example ="10")
+		private Integer VoteCount;
+}
