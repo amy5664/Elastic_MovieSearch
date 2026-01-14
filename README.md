@@ -278,7 +278,7 @@ npm run dev
 <br/>
 
 ### 영화 상세보기
-![배우 출연작 보기](./images/actor-filmography.gif)
+![배우 출연작 보기](./images/movie-actor.gif)
 
 * 영화 상세 화면에서 배우 선택 시 해당 배우의 출연작 목록 제공
 * 배우 필모그래피를 통해 다른 작품으로 자연스럽게 탐색 가능
