@@ -53,8 +53,8 @@
 |------|------|------|
 | 영화 검색 API 구현 | Elasticsearch 기반 키워드·조건 검색 API 설계 및 구현 | ⭐⭐ |
 | 자동완성 API 구현 | 입력 키워드 기반 실시간 검색어 자동완성 기능 구현 | ⭐⭐⭐ |
-| 필터 옵션 API 구현 | 장르·평점·개봉연도 등 조건별 필터링 API 구현 | ⭐⭐⭐ |
-| 외부 리뷰 연동 API | 외부 영화 리뷰 API 연동 및 데이터 가공 처리 | ⭐⭐ |
+| 필터 옵션 API 구현 | 장르·평점·개봉연도 등 조건별 필터링 API 구현 | ⭐⭐ |
+| 외부 리뷰 연동 API | 외부 영화 리뷰 API 연동 및 데이터 가공 처리 | ⭐⭐⭐ |
 | AI 리뷰 요약 기능 | 리뷰 데이터를 AI로 요약하여 핵심 정보 제공 | ⭐⭐⭐|
 | 퀵매치 추천 기능 | 사용자 선택 기반 즉시 영화 추천(Quick Match) 기능 구현 | ⭐⭐⭐ |
 
@@ -63,8 +63,9 @@
 > - ⭐⭐   : 주요 기능 구현  
 > - ⭐     : 일부 기능 구현  
 
-📄 **개인 기여 상세 문서 (PDF)**  
-(추후 PDF 링크 추가)
+📄 <a href="pdf/elastic_movie_gayoung.pdf" target="_blank">
+<strong>개인 기여 상세 문서 (PDF)</strong>
+</a>
 
 ---
 
@@ -194,7 +195,6 @@ movie_project/
 # 2. 컨테이너 실행
 docker-compose up -d
 ```
-> **-** 브라우저에서 http://localhost:9200 접속 시 JSON 응답이 보이면 성공
 
 <br/>
 
@@ -225,7 +225,6 @@ pip install -r requirements.txt
 python Movie_El.py
 ```
 
-> **-** http://localhost:5601 (Kibana) 접속 -> 좌측 햄버거 메뉴 -> Dev Tools -> GET movies/_search 입력 후 실행 (데이터 확인)
 
 <br/>
 
@@ -234,7 +233,6 @@ python Movie_El.py
 2. `src/main/resources/application.yml` 설정을 확인합니다. (포트 8484)
 3. `BootMovieProjectApplication` 파일을 실행합니다.
 
-> **-** 콘솔에 "Started..." 메시지 확인 후 [http://localhost:8484/api/search?q=사랑](http://localhost:8484/api/search?q=사랑) 접속 시 데이터가 뜨면 성공
 
 <br/>
 
@@ -252,8 +250,6 @@ npm install
 npm run dev
 
 ```
-
-> **-** 접속: http://localhost:5173 (Chrome 브라우저 권장)
 
 <br/>
 
