@@ -266,6 +266,79 @@ npm run dev
 
 <br/>
 
+### 검색 엔진
+
+![검색api](./images/Search.gif)
+
+* 검색창에 키워드 입력 시 목록 자동 제공
+* 시리즈물일 경우 시리즈물 우선순위
+* 애니메이션일 경우 애니메이션을 우선순위
+* 성인인증된 상태가 아니라면 성인물 필터
+
+<br/>
+
+### 영화 상세보기
+![배우 출연작 보기](./images/actor-filmography.gif)
+
+* 영화 상세 화면에서 배우 선택 시 해당 배우의 출연작 목록 제공
+* 배우 필모그래피를 통해 다른 작품으로 자연스럽게 탐색 가능
+* 영화 → 배우 → 영화로 이어지는 탐색 흐름 강화
+
+<br/>
+
+### 영화 리뷰
+![영화 리뷰](./images/movie-review.gif)
+
+* 외부(TMDB) 리뷰와 내부 리뷰를 통합 제공
+* AI 리뷰 요약으로 전체 평가를 빠르게 확인 가능
+
+<br/>
+
+### 영화 관련 기사
+![영화 관련 기사](./images/movie-news.gif)
+
+* 영화 상세 정보와 연계된 관련 기사 제공
+* 기사 목록을 통해 추가 정보 탐색 가능
+
+<br/>
+
+### 영화 예매
+![영화 예매](./images/movie-booking.gif)
+
+* 영화 선택 후 예매 흐름을 시작하는 기능
+* 예매 → 결제 → 티켓 발급까지 하나의 플로우로 제공
+
+<br/>
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <b>영화 예매 결제</b><br/>
+      <img src="./images/movie-payment.gif" width="100%"/><br/>
+      <p align="left">
+        • 결제 수단 선택 및 결제 진행<br/>
+        • 예매 정보 확인
+      </p>
+    </td>
+    <td width="50%" align="center">
+      <b>결제 완료 & 티켓</b><br/>
+      <img src="./images/payment-complete-ticket.gif" width="100%"/><br/>
+      <p align="left">
+        • 결제 완료 후 티켓 정보 제공<br/>
+        • 예매 완료 결과 확인 가능
+      </p>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+### 리캡
+![리캡](./images/movie-recap.gif)
+
+* 영화 주요 내용을 요약한 리캡 콘텐츠 제공
+* 짧은 시간 내 영화 흐름 파악 가능
+
 ### 퀵매칭
 ![퀵매칭](./images/QuickMatch.gif)
 
@@ -287,14 +360,3 @@ npm run dev
 <img src="./images/퀵매칭하단.png" width="100%">
 
 </details>
-
-<br/>
-
-### 검색 엔진
-
-![검색api](./images/Search.gif)
-
-* 검색창에 키워드 입력 시 목록 자동 제공
-* 시리즈물일 경우 시리즈물 우선순위
-* 애니메이션일 경우 애니메이션을 우선순위
-* 성인인증된 상태가 아니라면 성인물 필터
